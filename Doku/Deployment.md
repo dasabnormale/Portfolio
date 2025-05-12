@@ -1,13 +1,13 @@
 # Vergleichstabelle: Statisches Hosting – Übersicht
 
-| Anbieter              | Preis (Free-Tier)                         | CI/CD integriert                 | Custom Domain         | HTTPS | Serverlose Funktionen             | Performance / CDN               | Einschränkungen                                |
-|----------------------|-------------------------------------------|----------------------------------|------------------------|--------|------------------------------------|----------------------------------|------------------------------------------------|
-| **Netlify**          | Ja (sehr großzügig)                       | Ja                               | Ja                     | Ja     | Ja (Functions, Edge)               | Global CDN                      | Begrenzte Build-Zeit im Free-Tier              |
-| **GitHub Pages**     | Ja                                        | Teilweise (über Actions)         | Ja (mit DNS-Einrichtung) | Ja     | Nein                               | Gut (aber begrenzter CDN)       | Keine serverseitige Logik                      |
-| **GitLab Pages**     | Ja                                        | Ja                               | Ja                     | Ja     | Nein                               | Gut                              | Komplexere Einrichtung                         |
-| **Cloudflare Pages** | Ja                                        | Ja                               | Ja                     | Ja     | Ja (Edge Functions)                | Exzellent (Cloudflare CDN)       | Kein Support für dynamisches Backend           |
-| **Google Cloud Storage** | Nein (30 GB im Monat für 90 Tage)     | Nein                             | Ja                     | Ja     | Über Cloud Functions kombinierbar | Schnell, aber selbst konfigurierbar | Technisch komplexer                        |
-| **Amazon S3**        | Nein (freies Kontingent 12 Monate)       | Nein                             | Ja                     | Ja     | Kombinierbar mit Lambda            | Hochperformant                   | Komplexer Setup, keine CI/CD                   |
+| Anbieter              | Preis (Free-Tier)                  | CI/CD integriert                 | Custom Domain         | HTTPS | Serverlose Funktionen             | Performance / CDN               | Einschränkungen                                |
+|----------------------|------------------------------------|----------------------------------|------------------------|--------|------------------------------------|----------------------------------|------------------------------------------------|
+| **Netlify**          | Ja (sehr grosszügig)               | Ja                               | Ja                     | Ja     | Ja (Functions, Edge)               | Global CDN                      | Begrenzte Build-Zeit im Free-Tier              |
+| **GitHub Pages**     | Ja                                 | Teilweise (über Actions)         | Ja (mit DNS-Einrichtung) | Ja     | Nein                               | Gut (aber begrenzter CDN)       | Keine serverseitige Logik                      |
+| **GitLab Pages**     | Ja                                 | Ja                               | Ja                     | Ja     | Nein                               | Gut                              | Komplexere Einrichtung                         |
+| **Cloudflare Pages** | Ja                                 | Ja                               | Ja                     | Ja     | Ja (Edge Functions)                | Exzellent (Cloudflare CDN)       | Kein Support für dynamisches Backend           |
+| **Google Cloud Storage** | Nein (30 GB im Monat für 90 Tage)  | Nein                             | Ja                     | Ja     | Über Cloud Functions kombinierbar | Schnell, aber selbst konfigurierbar | Technisch komplexer                        |
+| **Amazon S3**        | Nein (freies Kontingent 12 Monate) | Nein                             | Ja                     | Ja     | Kombinierbar mit Lambda            | Hochperformant                   | Komplexer Setup, keine CI/CD                   |
 
 ---
 
