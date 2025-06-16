@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Home
+title: Home2
 ---
 
 # Home
