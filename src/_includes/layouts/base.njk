@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} – {% endif %}Portfolio</title>
+  <link rel="stylesheet" href="/css/StyleSheet.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="/"
+          {% if page.url == "/" %}class="active"{% endif %}>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/projekte/"
+          {% if page.url.startsWith("/projekte/") %}class="active"{% endif %}>
+          Projekte
+        </a>
+      </li>
+      <li>
+        <a href="/ueberUns/"
+          {% if page.url.startsWith("/ueberUns/") %}class="active"{% endif %}>
+          Über uns
+        </a>
+      </li>
+      <li>
+        <a href="/kontakt/"
+          {% if page.url.startsWith("/kontakt/") %}class="active"{% endif %}>
+          Kontakt
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <img src="https://www.teko.ch/build/images/TEKO-logo-pink.4cc3e965.svg" alt="TEKO Logo">
+    <p>© 2025</p>
+  </footer>
+</body>
+</html>
