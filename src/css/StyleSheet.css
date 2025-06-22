@@ -5,32 +5,6 @@
     box-sizing: border-box;
 }
 
-/* CSS-Variablen für Navigation */
-:root {
-    --nav-bg: #0082e6;
-    --nav-color: #fff;
-    --nav-hover-bg: #1b9bff;
-
-    --nav-flex-direction: column;
-    --nav-link-padding: 0.75rem 1rem;
-    --nav-link-font-size: 1.1rem;
-}
-
-@media (min-width: 37.5rem) {
-    :root {
-        --nav-flex-direction: row;
-        --nav-link-padding: 1rem 1.5rem;
-        --nav-link-font-size: 1rem;
-    }
-}
-
-@media (min-width: 64rem) {
-    :root {
-        --nav-link-padding: 1rem 2rem;
-        --nav-link-font-size: 1.2rem;
-    }
-}
-
 /* Body-Grundlayout */
 main {
     display: flex;
@@ -45,42 +19,41 @@ main {
     color: #000;
 }
 
+/* Absatzabstände */
 p {
-    margin-block: 1rem;
+    margin-block-start: 1rem;
+    margin-block-end:   1rem;
 }
 
-/* Navigation */
+/* Navigationsleiste – mobil (vertikal) */
 nav {
-    background-color: var(--nav-bg);
-    color: var(--nav-color);
+    background-color: #0082e6;
 }
 nav ul {
     display: flex;
-    flex-direction: var(--nav-flex-direction);
+    flex-direction: column;
     align-items: center;
     list-style: none;
 }
 nav li + li {
-    /* Abstand zwischen Links */
     margin: 0.5rem 0;
 }
 nav a {
     display: block;
-    padding: var(--nav-link-padding);
-    font-size: var(--nav-link-font-size);
-    color: var(--nav-color);
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    color: #fff;
     text-transform: uppercase;
     border-radius: 0.25rem;
-    background-color: transparent;
+    font-size: 1.1rem;
     transition: background 0.3s;
 }
 nav a:hover,
 nav a.active {
-    background-color: var(--nav-hover-bg);
-    color: var(--nav-color);
+    background-color: #1b9bff;
 }
 
-/* Haupttext (h1 & p im Body) */
+/* Hauptüberschrift und erste Absätze */
 body > h1,
 body > p {
     margin: 1.25rem;
@@ -89,8 +62,8 @@ body > p {
 
 /* Footer */
 footer {
-    background-color: var(--nav-bg);
-    color: var(--nav-color);
+    background-color: #0082e6;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
@@ -101,12 +74,36 @@ footer img {
     margin: 0.5rem auto;
 }
 
-/* Skip-Link (unsichtbar, bei Fokus sichtbar) */
+/* ab 600 px: Navigation horizontal, rechtsbündig */
+@media (min-width: 37.5rem) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li + li {
+        margin-left: 1rem;
+    }
+    nav a {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* ab 1024 px: großzügigere Abstände & größere Schrift */
+@media (min-width: 64rem) {
+    nav a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Skip-Link unsichtbar, bei Fokus sichtbar */
 a[href="#main"] {
     position: absolute;
     left: -9999rem;
 }
 a[href="#main"]:focus {
+    position: absolute;
     left: 2rem;
     top: 2rem;
     background-color: #fff;
