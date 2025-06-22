@@ -1,8 +1,10 @@
 # Portfolio
 ## Gruppenarbeit Web-Engineering
-
+made by:
+Adrianna Kwiecinska
+Patrick Schmutz
 ### Aufgabenstellung:
-https://github.com/fhirter/webengineering/blob/main/Assignments/01_Basics.md
+- https://github.com/fhirter/webengineering/blob/main/Assignments/01_Basics.md
 
 ### Abgaberelevant
 #### CSS Validator
@@ -18,10 +20,13 @@ https://github.com/fhirter/webengineering/blob/main/Assignments/01_Basics.md
 #### Übersicht
 Das Projekt wurde im Unterricht erstellt.
 Hierfür wurde das ganze als HTML und CSS File aufgebaut und über GitHub automatisiert auf einem Host veröffentlicht.
+In diesem Github finden Sie verschiedene Anläufe wie beispielsweise Docker, welches dann nicht weiterverfolgt wurde.
+
+Die Abgaberelevanten Inhalte finden Sie zudem unter Doku:
+- https://github.com/dasabnormale/Portfolio/tree/main/Doku
 
 #### Link
 - https://portfolio-1te.pages.dev/
-
 
 
 ### Quellen/ Verwendetes Material
