@@ -3,7 +3,7 @@ Der Folgende Vergleich wurde mit ChatGPT gemacht.
 
 | Anbieter                   | Preis (Free-Tier)                         | CI/CD integriert      | Custom Domain                | HTTPS | Serverlose Funktionen       | Performance / CDN          | Einschränkungen                       |
 |----------------------------|-------------------------------------------|-----------------------|------------------------------|-------|-----------------------------|----------------------------|----------------------------------------|
-| **Netlify**                | Ja (sehr großzügig)                       | Ja                    | Ja                           | Ja    | Ja (Functions, Edge)        | Global CDN                 | Begrenzte Build-Zeit im Free-Tier      |
+| **Netlify**                | Ja (sehr grosszügig)                       | Ja                    | Ja                           | Ja    | Ja (Functions, Edge)        | Global CDN                 | Begrenzte Build-Zeit im Free-Tier      |
 | **GitHub Pages**           | Ja                                        | Teilweise (über Actions) | Ja (mit DNS-Einrichtung)   | Ja    | Nein                        | Gut (aber begrenzter CDN)  | Keine serverseitige Logik              |
 | **GitLab Pages**           | Ja                                        | Ja                    | Ja                           | Ja    | Nein                        | Gut                        | Komplexere Einrichtung                 |
 | **Cloudflare Pages**       | Ja                                        | Ja                    | Ja                           | Ja    | Ja (Edge Functions)         | Exzellent (Cloudflare CDN) | Kein Support für dynamisches Backend    |
@@ -29,7 +29,7 @@ Der Folgende Vergleich wurde mit ChatGPT gemacht.
 - **Vorteil:** Sehr skalierbar, gute Kontrolle über Berechtigungen und Lifecycle-Policies.
 - **Einschränkung:** Komplexer Setup, CI/CD muss extern hinzugefügt werden.
 
-## 4. Unternehmenswebsite oder größere Webanwendung
+## 4. Unternehmenswebsite oder grössere Webanwendung
 - **Netlify (Premium) oder Cloudflare Pages + Workers**
 - **Vorteil:** Globale Performance, serverlose Funktionen, Custom Routing, A/B Testing.
 
@@ -40,7 +40,7 @@ Der Folgende Vergleich wurde mit ChatGPT gemacht.
 Für die meisten Entwickler oder kleinen Teams ist **Netlify** derzeit der beste Allrounder:
 
 - Einfache Einrichtung
-- Großzügiger Free-Tier
+- Grosszügiger Free-Tier
 - Unterstützung für Serverless-Functions
 - Automatisches Deployment über Git
 
@@ -49,7 +49,7 @@ Für die meisten Entwickler oder kleinen Teams ist **Netlify** derzeit der beste
 # Unsere Einschätzung
 ChatGPT hat uns im Prinzip 2 Vorgeschlagen welche beide ausprobiert wurden.
 
-Problem bei Netlify ist einfach, Netlify hat kein Greenhosting. 
+Problem bei Netlify ist einfach, Netlify hat kein Greenhosting.
 Darum würde man damit beim Ecograder nicht auf über 90 Punkte kommen.
 Aus diesem Grund haben wir uns dann für Cloudflare entschieden.
 https://portfolio-1te.pages.dev/
