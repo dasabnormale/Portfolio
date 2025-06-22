@@ -24,6 +24,7 @@ In diesem Github finden Sie verschiedene Anläufe wie beispielsweise Docker, wel
 
 Die Abgaberelevanten Inhalte finden Sie zudem unter Doku:
 - https://github.com/dasabnormale/Portfolio/tree/main/Doku
+- 
 
 #### Link
 - https://portfolio-1te.pages.dev/
