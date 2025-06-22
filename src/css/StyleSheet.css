@@ -74,11 +74,11 @@ footer img {
     margin: 0.5rem auto;
 }
 
-/* ab 600 px: Navigation horizontal, rechtsbündig */
+/* ab 600 px: Navigation horizontal, zentriert */
 @media (min-width: 37.5rem) {
     nav ul {
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
     }
     nav li + li {
         margin-left: 1rem;
