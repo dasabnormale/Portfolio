@@ -36,13 +36,13 @@ Die Abgaberelevanten Inhalte finden Sie zudem unter Doku:
 Das Handbuch für Webentwickler
 ISBN 978-3-8362-9085-2
 - Unterrichtspowerpoint von Fabian Hirter auf Teamsablage. Diese wird nicht veröffentlicht daher nur ein Shoutout:
-  https://fabianhirter.ch/
+  https://www.fabianhirter.ch/
 
 #### Navigation Bar
 - https://www.youtube.com/watch?v=QwKM2Dubg44&
 
 #### Flexboxtutorial
-- https://flexboxfroggy.com/#de
+- https://www.flexboxfroggy.com/#de
 
 #### KI
-- https://chatgptcom
+- https://www.chatgpt.com
