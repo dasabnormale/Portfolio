@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Base */
 html {
     font-size: 100%;
 }
@@ -16,6 +17,7 @@ body {
     line-height: 1.5;
 }
 
+/* Hauptbereich */
 main {
     display: flex;
     flex-direction: column;
@@ -32,13 +34,13 @@ p {
 h1, h2, h3, h4, h5, h6 {
     margin-block-end: 1.5rem;
     color: #222222;
-    line-height: 1.2;
     background-color: transparent;
 }
 
 /* Navigation */
 nav {
     background-color: #0082e6;
+    color: #ffffff;
 }
 
 nav ul {
@@ -67,8 +69,8 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a.active {
-    color: #ffffff;
     background-color: #1b9bff;
+    color: #ffffff;
 }
 
 @media (min-width: 37.5rem) {
