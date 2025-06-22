@@ -1,14 +1,14 @@
 # Vergleichstabelle: Statisches Hosting – Übersicht
-Der Folgende Vergleich wurde mit ChatGPT gemacht.
+Der folgende Vergleich wurde mit ChatGPT gemacht.
 
-| Anbieter                   | Preis (Free-Tier)                         | CI/CD integriert      | Custom Domain                | HTTPS | Serverlose Funktionen       | Performance / CDN          | Einschränkungen                       |
-|----------------------------|-------------------------------------------|-----------------------|------------------------------|-------|-----------------------------|----------------------------|----------------------------------------|
-| **Netlify**                | Ja (sehr grosszügig)                       | Ja                    | Ja                           | Ja    | Ja (Functions, Edge)        | Global CDN                 | Begrenzte Build-Zeit im Free-Tier      |
-| **GitHub Pages**           | Ja                                        | Teilweise (über Actions) | Ja (mit DNS-Einrichtung)   | Ja    | Nein                        | Gut (aber begrenzter CDN)  | Keine serverseitige Logik              |
-| **GitLab Pages**           | Ja                                        | Ja                    | Ja                           | Ja    | Nein                        | Gut                        | Komplexere Einrichtung                 |
-| **Cloudflare Pages**       | Ja                                        | Ja                    | Ja                           | Ja    | Ja (Edge Functions)         | Exzellent (Cloudflare CDN) | Kein Support für dynamisches Backend    |
-| **Google Cloud Storage**   | Nein (30 GB im Monat für 90 Tage)         | Nein                  | Ja                           | Ja    | Über Cloud Functions kombinierbar | Schnell, aber selbst konfigurierbar | Technisch komplexer                    |
-| **Amazon S3**              | Nein (freies Kontingent 12 Monate)        | Nein                  | Ja                           | Ja    | Kombinierbar mit Lambda     | Hochperformant             | Komplexer Setup, keine CI/CD           |
+| Anbieter                   | Preis (Free-Tier)                         | CI/CD integriert          | Custom Domain                | HTTPS | Serverlose Funktionen           | Performance / CDN            | Einschränkungen                         |
+|----------------------------|-------------------------------------------|---------------------------|------------------------------|-------|---------------------------------|------------------------------|------------------------------------------|
+| **Netlify**                | Ja (sehr grosszügig)                      | Ja                        | Ja                           | Ja    | Ja (Functions, Edge)            | Global CDN                   | Begrenzte Build-Zeit im Free-Tier        |
+| **GitHub Pages**           | Ja                                        | Teilweise (über Actions)  | Ja (mit DNS-Einrichtung)     | Ja    | Nein                            | Gut (aber begrenzter CDN)    | Keine serverseitige Logik                |
+| **GitLab Pages**           | Ja                                        | Ja                        | Ja                           | Ja    | Nein                            | Gut                          | Komplexere Einrichtung                   |
+| **Cloudflare Pages**       | Ja                                        | Ja                        | Ja                           | Ja    | Ja (Edge Functions)             | Exzellent (Cloudflare CDN)   | Kein Support für dynamisches Backend      |
+| **Google Cloud Storage**   | Nein (30 GB im Monat für 90 Tage)         | Nein                      | Ja                           | Ja    | Über Cloud Functions kombinierbar | Schnell, aber selbst konfigurierbar | Technisch komplexer                      |
+| **Amazon S3**              | Nein (freies Kontingent 12 Monate)        | Nein                      | Ja                           | Ja    | Kombinierbar mit Lambda         | Hochperformant               | Komplexer Setup, keine CI/CD             |
 
 ---
 
@@ -29,7 +29,7 @@ Der Folgende Vergleich wurde mit ChatGPT gemacht.
 - **Vorteil:** Sehr skalierbar, gute Kontrolle über Berechtigungen und Lifecycle-Policies.
 - **Einschränkung:** Komplexer Setup, CI/CD muss extern hinzugefügt werden.
 
-## 4. Unternehmenswebsite oder grössere Webanwendung
+## 4. Unternehmenswebsite oder groessere Webanwendung
 - **Netlify (Premium) oder Cloudflare Pages + Workers**
 - **Vorteil:** Globale Performance, serverlose Funktionen, Custom Routing, A/B Testing.
 
@@ -46,10 +46,15 @@ Für die meisten Entwickler oder kleinen Teams ist **Netlify** derzeit der beste
 
 **Alternativ** ist **Cloudflare Pages** besonders attraktiv für performance-orientierte Projekte mit CDN-Fokus und Edge-Funktionen.
 
-# Unsere Einschätzung
-ChatGPT hat uns im Prinzip 2 Vorgeschlagen welche beide ausprobiert wurden.
+---
 
-Problem bei Netlify ist einfach, Netlify hat kein Greenhosting.
-Darum würde man damit beim Ecograder nicht auf über 90 Punkte kommen.
-Aus diesem Grund haben wir uns dann für Cloudflare entschieden.
-https://portfolio-1te.pages.dev/
+# Unsere Einschätzung
+
+ChatGPT hat uns im Prinzip zwei Optionen vorgeschlagen, die beide ausprobiert wurden.
+
+Problem bei Netlify ist, dass es kein Green-Hosting bietet.  
+Deshalb erreicht man damit beim Ecograder nicht über 90 Punkte.  
+Aus diesem Grund haben wir uns für Cloudflare entschieden.
+- https://www.cloudflare.com/
+Unsere Seite:
+- https://portfolio-1te.pages.dev/
