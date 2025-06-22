@@ -2,41 +2,77 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>{% if title %}{{ title }} – {% endif %}Portfolio</title>
+
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Portfolio von Adrianna Kwiecińska &amp; Patrick Schmutz{% endif %}" />
+  <meta name="author" content="Adrianna Kwiecińska &amp; Patrick Schmutz" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if title %}{{ title }} – {% endif %}Portfolio" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}Portfolio von Adrianna Kwiecińska &amp; Patrick Schmutz{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{{ imageUrl | default(site.url ~ '/assets/preview.png') }}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{% if title %}{{ title }} – {% endif %}Portfolio" />
+  <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Portfolio von Adrianna Kwiecińska &amp; Patrick Schmutz{% endif %}" />
+  <meta name="twitter:image" content="{{ imageUrl | default(site.url ~ '/assets/preview.png') }}" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="Portfolio, Web-Engineering, Eleventy, Static Site, Adrianna Kwiecińska, Patrick Schmutz" />
+
+  <!-- Theme Color für Mobile Browser -->
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
   <link rel="stylesheet" href="/css/StyleSheet.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li>
-        <a href="/"
-          {% if page.url == "/" %}class="active"{% endif %}>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="/projekte/"
-          {% if page.url.startsWith("/projekte/") %}class="active"{% endif %}>
-          Projekte
-        </a>
-      </li>
-      <li>
-        <a href="/ueberUns/"
-          {% if page.url.startsWith("/ueberUns/") %}class="active"{% endif %}>
-          Über uns
-        </a>
-      </li>
-      <li>
-        <a href="/kontakt/"
-          {% if page.url.startsWith("/kontakt/") %}class="active"{% endif %}>
-          Kontakt
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <main>
+  <header>
+    <nav role="navigation">
+      <ul>
+        <li>
+          <a href="/"
+            {% if page.url == "/" %}class="active" aria-current="page"{% endif %}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/projekte/"
+            {% if page.url.startsWith("/projekte/") %}class="active" aria-current="page"{% endif %}>
+            Projekte
+          </a>
+        </li>
+        <li>
+          <a href="/ueberUns/"
+            {% if page.url.startsWith("/ueberUns/") %}class="active" aria-current="page"{% endif %}>
+            Über uns
+          </a>
+        </li>
+        <li>
+          <a href="/kontakt/"
+            {% if page.url.startsWith("/kontakt/") %}class="active" aria-current="page"{% endif %}>
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
     {{ content | safe }}
   </main>
 
