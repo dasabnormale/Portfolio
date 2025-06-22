@@ -5,6 +5,32 @@
     box-sizing: border-box;
 }
 
+/* CSS-Variablen für Navigation */
+:root {
+    --nav-bg: #0082e6;
+    --nav-color: #fff;
+    --nav-hover-bg: #1b9bff;
+
+    --nav-flex-direction: column;
+    --nav-link-padding: 0.75rem 1rem;
+    --nav-link-font-size: 1.1rem;
+}
+
+@media (min-width: 37.5rem) {
+    :root {
+        --nav-flex-direction: row;
+        --nav-link-padding: 1rem 1.5rem;
+        --nav-link-font-size: 1rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    :root {
+        --nav-link-padding: 1rem 2rem;
+        --nav-link-font-size: 1.2rem;
+    }
+}
+
 /* Body-Grundlayout */
 main {
     display: flex;
@@ -20,36 +46,38 @@ main {
 }
 
 p {
-    margin-block-start: 1rem;
-    margin-block-end:   1rem;
+    margin-block: 1rem;
 }
 
-/* Navigation – Standard (mobil): vertikal */
+/* Navigation */
 nav {
-    background-color: #0082e6;
+    background-color: var(--nav-bg);
+    color: var(--nav-color);
 }
 nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: var(--nav-flex-direction);
     align-items: center;
     list-style: none;
 }
 nav li + li {
+    /* Abstand zwischen Links */
     margin: 0.5rem 0;
 }
 nav a {
     display: block;
-    padding: 0.75rem 1rem;
-    color: #fff;
+    padding: var(--nav-link-padding);
+    font-size: var(--nav-link-font-size);
+    color: var(--nav-color);
     text-transform: uppercase;
     border-radius: 0.25rem;
-    font-size: 1.1rem;
-    transition: background 0.3s;
     background-color: transparent;
+    transition: background 0.3s;
 }
 nav a:hover,
 nav a.active {
-    background-color: #1b9bff;
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-color);
 }
 
 /* Haupttext (h1 & p im Body) */
@@ -61,34 +89,16 @@ body > p {
 
 /* Footer */
 footer {
-    background-color: #0082e6;
-    color: #fff;
+    background-color: var(--nav-bg);
+    color: var(--nav-color);
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
 }
-
-/* Ab 600px: Navigation horizontal */
-@media (min-width: 37.5rem) {
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-    nav li + li {
-        margin-left: 1rem;
-    }
-    nav a {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-    }
-}
-
-/* Ab 1024px: großzügigere Abstände & Schrift */
-@media (min-width: 64rem) {
-    nav a {
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-    }
+footer img {
+    height: 2.875rem;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 /* Skip-Link (unsichtbar, bei Fokus sichtbar) */
@@ -97,7 +107,6 @@ a[href="#main"] {
     left: -9999rem;
 }
 a[href="#main"]:focus {
-    position: absolute;
     left: 2rem;
     top: 2rem;
     background-color: #fff;
