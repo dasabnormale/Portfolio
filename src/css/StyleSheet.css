@@ -12,6 +12,8 @@ main {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    padding: 2rem;
+
 }
 
 /* Navigation – Standard (mobil): vertikal */
@@ -63,7 +65,7 @@ footer img {
 }
 
 /* Ab 600px: Navigation horizontal */
-@media (min-width: 600px) {
+@media (min-width: 36rem) {
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -78,7 +80,7 @@ footer img {
 }
 
 /* Ab 1024px: großzügigere Abstände & Schrift */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
     nav a {
         padding: 1rem 2rem;     /* abstand oben unten 1rem links rechts 2rem */
         font-size: 1.2rem;
