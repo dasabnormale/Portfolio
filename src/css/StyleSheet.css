@@ -1,83 +1,81 @@
-/* Reset & Basis */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body-Grundlayout */
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
 main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
     padding: 2rem;
     max-width: 60rem;
     margin: 0 auto;
 }
 
 p {
-    margin-block-start: 1rem;
-    margin-block-end:   1rem;
+    margin-block: 1rem;
 }
 
-/* Navigation – Standard (mobil): vertikal */
+h1, h2, h3, h4, h5, h6 {
+    margin-block-end: 1.5rem;
+    color: #222222;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
 nav {
     background-color: #0082e6;
 }
+
 nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
 }
+
 nav li + li {
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
 }
+
 nav a {
     display: block;
     padding: 0.75rem 1rem;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     border-radius: 0.25rem;
     font-size: 1.1rem;
+    text-decoration: none;
     transition: background 0.3s;
 }
+
 nav a:hover,
+nav a:focus,
 nav a.active {
     background-color: #1b9bff;
 }
 
-/* Haupttext (h1 & p im Body) */
-body > h1,
-body > p {
-    margin: 1.25rem;
-    font-size: 1rem;
-}
-
-/* Footer */
-footer {
-    background-color: #0082e6;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: auto; /* Footer am Ende */
-}
-footer img {
-    height: 2.875rem;
-    display: block;
-    margin: 0.5rem auto;
-}
-
-/* Ab 600px: Navigation horizontal */
 @media (min-width: 37.5rem) {
     nav ul {
         flex-direction: row;
-        justify-content: center;
     }
     nav li + li {
-        margin: 0 0 0 1rem; /* lins 1rem */
+        margin: 0 0 0 1rem;
     }
     nav a {
         padding: 1rem 1.5rem;
@@ -85,23 +83,51 @@ footer img {
     }
 }
 
-/* Ab 1024px: großzügigere Abstände & Schrift */
 @media (min-width: 64rem) {
     nav a {
-        padding: 1rem 2rem;     /* abstand oben unten 1rem links rechts 2rem */
+        padding: 1rem 2rem;
         font-size: 1.2rem;
     }
 }
 
+footer {
+    background-color: #0082e6;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+footer img {
+    display: block;
+    margin: 0.5rem auto;
+    height: 2.875rem;
+}
+
 a[href="#main"] {
     position: absolute;
-    left: -9999px;
+    left: -9999rem;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
+
 a[href="#main"]:focus {
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    background: white;
+    position: static;
+    width: auto;
+    height: auto;
     padding: 0.5rem 1rem;
+    background-color: #0082e6;
+    color: #ffffff;
     z-index: 1000;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover,
+a:focus {
+    color: #004499;
+    text-decoration: underline;
 }
