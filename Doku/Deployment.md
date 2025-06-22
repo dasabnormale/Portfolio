@@ -56,5 +56,6 @@ Problem bei Netlify ist, dass es kein Green-Hosting bietet.
 Deshalb erreicht man damit beim Ecograder nicht über 90 Punkte.  
 Aus diesem Grund haben wir uns für Cloudflare entschieden.
 - https://www.cloudflare.com/
+
 Unsere Seite:
 - https://portfolio-1te.pages.dev/
