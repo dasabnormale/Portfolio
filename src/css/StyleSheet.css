@@ -1,3 +1,4 @@
+/* Reset & Basis */
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +33,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-block-end: 1.5rem;
     color: #222222;
     line-height: 1.2;
+    background-color: transparent;
 }
 
-h1 {
-    font-size: 2rem;
-}
-
+/* Navigation */
 nav {
     background-color: #0082e6;
 }
@@ -57,6 +56,7 @@ nav a {
     display: block;
     padding: 0.75rem 1rem;
     color: #ffffff;
+    background-color: transparent;
     text-transform: uppercase;
     border-radius: 0.25rem;
     font-size: 1.1rem;
@@ -67,6 +67,7 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a.active {
+    color: #ffffff;
     background-color: #1b9bff;
 }
 
@@ -90,6 +91,7 @@ nav a.active {
     }
 }
 
+/* Footer */
 footer {
     background-color: #0082e6;
     color: #ffffff;
@@ -104,12 +106,15 @@ footer img {
     height: 2.875rem;
 }
 
+/* Skip-Link */
 a[href="#main"] {
     position: absolute;
     left: -9999rem;
-    width: 1px;
-    height: 1px;
+    width: 1rem;
+    height: 1rem;
     overflow: hidden;
+    background-color: transparent;
+    color: inherit;
 }
 
 a[href="#main"]:focus {
@@ -122,8 +127,11 @@ a[href="#main"]:focus {
     z-index: 1000;
 }
 
+/* Standard-Links */
 a {
     color: #0066cc;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover,
