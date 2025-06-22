@@ -9,4 +9,6 @@ permalink: /ueberUns/
 Diese Seite wurde erstellt für eine Arbeit in Fach WebEngineering  
 für die Technische Schule TEKO.
 
-Deployment via GitHub
+Deployment via GitHub auf Cloudflare
+Weitere Informationen:
+https://github.com/dasabnormale/Portfolio
