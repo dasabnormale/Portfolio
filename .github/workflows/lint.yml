@@ -1,5 +1,5 @@
 # .github/workflows/lint.yml
-name: Lint HTML
+name: Lint HTML_CSS
 
 on: [push, pull_request]
 
