@@ -13,7 +13,7 @@ https://github.com/fhirter/webengineering/blob/main/Assignments/01_Basics.md
 - https://validator.w3.org/nu/?doc=https%3A%2F%2Fportfolio-1te.pages.dev%2F
 
 #### Ecograder
-
+![Screenshot Ecograder](Doku/ecograder.png "Ecograder Screenshot")
 
 #### Übersicht
 Das Projekt wurde im Unterricht erstellt.
