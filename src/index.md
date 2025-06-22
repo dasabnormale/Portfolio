@@ -12,4 +12,4 @@ Dieses Projekt soll als Portfolio dienen und ein Hintergrund zu den Personen bie
 
 Deployment via GitHub auf Cloudflare
 Weitere Informationen:
-https://github.com/dasabnormale/Portfolio
+[GitHub-Portfolio](https://github.com/dasabnormale/Portfolio)

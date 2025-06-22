@@ -11,4 +11,4 @@ für die Technische Schule TEKO.
 
 Deployment via GitHub auf Cloudflare
 Weitere Informationen:
-https://github.com/dasabnormale/Portfolio
+[GitHub-Portfolio](https://github.com/dasabnormale/Portfolio)

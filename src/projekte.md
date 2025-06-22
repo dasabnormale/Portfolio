@@ -8,10 +8,11 @@ permalink: /projekte/
 
 ## Github Repos
 ### Adrianna Kwiecinska
-https://github.com/AdaKwie
+[GitHub](https://github.com/AdaKwie)
 ### Patrick Schmutz
-https://github.com/dasabnormale
+[GitHub](https://github.com/dasabnormale)
+
 
 Deployment via GitHub auf Cloudflare
 Weitere Informationen:
-https://github.com/dasabnormale/Portfolio
+[GitHub-Portfolio](https://github.com/dasabnormale/Portfolio)
