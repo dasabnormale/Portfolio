@@ -74,7 +74,7 @@ footer img {
     margin: 0.5rem auto;
 }
 
-/* ab 600 px: Navigation horizontal, zentriert */
+/* ab 37.5 rem: Navigation horizontal, zentriert */
 @media (min-width: 37.5rem) {
     nav ul {
         flex-direction: row;
@@ -89,7 +89,7 @@ footer img {
     }
 }
 
-/* ab 1024 px: großzügigere Abstände & größere Schrift */
+/* ab 64rem: großzügigere Abstände & größere Schrift */
 @media (min-width: 64rem) {
     nav a {
         padding: 1rem 2rem;
